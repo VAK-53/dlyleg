@@ -1,0 +1,5 @@
+digraph G_compleсated {
+    a -> b -> f->
+   {c; d; e} -> ga
+   [style=bold,label="100 times"];
+ }

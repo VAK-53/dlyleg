@@ -1,0 +1,2 @@
+[[:digraph, 'Gfork'],
+[:op, 'a', ['b', ['f', [:many, 'c', 'd', 'e']]]]]

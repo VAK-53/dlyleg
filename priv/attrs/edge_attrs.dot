@@ -1,0 +1,5 @@
+digraph GedgeA {
+edge
+            [style=dotted,
+             penwidth=1.0,
+             minlen=1]; }

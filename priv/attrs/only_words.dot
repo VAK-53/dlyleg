@@ -1,0 +1,6 @@
+digraph Gwords {
+edge
+[style=dotted,
+color=black,
+tooltip=label];
+}

@@ -1,0 +1,5 @@
+digraph Gcomplex {
+   a -> b -> f->
+   {c; d; e}
+   -> g;
+ }

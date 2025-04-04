@@ -1,0 +1,4 @@
+digraph Gnode_att {
+node
+[shape=box,style=filled,colo=".7 .3 1.0"];
+}

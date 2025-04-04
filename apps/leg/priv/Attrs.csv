@@ -1,0 +1,195 @@
+﻿Name;Used By;Type;Default;Minimum;Description, notes
+_background;Graphs;xdot;<none>;;A string in the xdot format specifying an arbitrary background.
+area;Nodes, Clusters;double;1.0;>0;Indicates the preferred area for a node or empty cluster. patchwork only.
+arrowhead;Edges;arrowType;normal;;Style of arrowhead on the head node of an edge.
+arrowsize;Edges;double;1.0;0.0;Multiplicative scale factor for arrowheads.
+arrowtail;Edges;arrowType;normal;;Style of arrowhead on the tail node of an edge.
+bb;Clusters, Graphs;rect;;;Bounding box of drawing in points. write only.
+beautify;Graphs;bool;false;;Whether to draw leaf nodes uniformly in a circle around the root node in sfdp.. sfdp only.
+bgcolor;Graphs, Clusters;color, colorList;<none>;;Canvas background color.
+center;Graphs;bool;false;;Whether to center the drawing in the output canvas.
+charset;Graphs;string;"""UTF-8""";;Character encoding used when interpreting string input as a text label..
+class;Edges, Nodes, Clusters, Graphs;string;"""""";;Classnames to attach to the node, edge, graph, or cluster's SVG element. svg only.
+cluster;Clusters, Subgraphs;bool;false;;Whether the subgraph is a cluster.
+clusterrank;Graphs;clusterMode;local;;Mode used for handling clusters. dot only.
+color;Edges, Nodes, Clusters;color, colorList;black;;Basic drawing color for graphics, not text.
+colorscheme;Edges, Nodes, Clusters, Graphs;string;"""""";;A color scheme namespace: the context for interpreting color names.
+comment;Edges, Nodes, Graphs;string;"""""";;Comments are inserted into output.
+compound;Graphs;bool;false;;If true, allow edges between clusters. dot only.
+concentrate;Graphs;bool;false;;If true, use edge concentrators.
+constraint;Edges;bool;true;;If false, the edge is not used in ranking the nodes. dot only.
+Damping;Graphs;double;0.99;0.0;Factor damping force motions.. neato only.
+decorate;Edges;bool;false;;Whether to connect the edge label to the edge with a line.
+defaultdist;Graphs;double;1+(avg. len)*sqrt(|V|);epsilon;The distance between nodes in separate connected components. neato only.
+dim;Graphs;int;2;2;Set the number of dimensions used for the layout. neato, fdp, sfdp only.
+dimen;Graphs;int;2;2;Set the number of dimensions used for rendering. neato, fdp, sfdp only.
+dir;Edges;dirType;forward (directed);;Edge type for drawing arrowheads.
+;;;none (undirected);;
+diredgeconstraints;Graphs;string, bool;false;;Whether to constrain most edges to point downwards. neato only.
+distortion;Nodes;double;0.0;-100.0;Distortion factor for shape=polygon.
+dpi;Graphs;double;96.0;0.0;Specifies the expected number of pixels per inch on a display device. bitmap output, svg only.
+edgehref;Edges;escString;"""""";;Synonym for edgeURL. map, svg only.
+edgetarget;Edges;escString;<none>;;Browser window to use for the edgeURL link. map, svg only.
+edgetooltip;Edges;escString;"""""";;Tooltip annotation attached to the non-label part of an edge. cmap, svg only.
+edgeURL;Edges;escString;"""""";;The link for the non-label parts of an edge. map, svg only.
+epsilon;Graphs;double;.0001 * # nodes (mode == KK);;Terminating condition. neato only.
+;;;.0001 (mode == major);;
+;;;.01 (mode == sgd);;
+esep;Graphs;addDouble, addPoint;3;;Margin used around polygons for purposes of spline edge routing. neato, fdp, sfdp, osage, circo, twopi only.
+fillcolor;Nodes, Edges, Clusters;color, colorList;lightgrey (nodes);;Color used to fill the background of a node or cluster.
+;;;black (clusters);;
+fixedsize;Nodes;bool, string;false;;Whether to use the specified width and height attributes to choose node size (rather than sizing to fit the node contents).
+fontcolor;Edges, Nodes, Graphs, Clusters;color;black;;Color used for text.
+fontname;Edges, Nodes, Graphs, Clusters;string;"""Times-Roman""";;Font used for text.
+fontnames;Graphs;string;"""""";;Allows user control of how basic fontnames are represented in SVG output. svg only.
+fontpath;Graphs;string;<system-dependent>;;Directory list used by libgd to search for bitmap fonts.
+fontsize;Edges, Nodes, Graphs, Clusters;double;14.0;1.0;Font size, in points, used for text.
+forcelabels;Graphs;bool;true;;Whether to force placement of all xlabels, even if overlapping.
+gradientangle;Nodes, Clusters, Graphs;int;0;0;If a gradient fill is being used, this determines the angle of the fill.
+group;Nodes;string;"""""";;Name for a group of nodes, for bundling edges avoiding crossings.. dot only.
+head_lp;Edges;point;;;Center position of an edge's head label. write only.
+headclip;Edges;bool;true;;If true, the head of an edge is clipped to the boundary of the head node.
+headhref;Edges;escString;"""""";;Synonym for headURL. map, svg only.
+headlabel;Edges;lblString;"""""";;Text label to be placed near head of edge.
+headport;Edges;portPos;center;;Indicates where on the head node to attach the head of the edge.
+headtarget;Edges;escString;<none>;;Browser window to use for the headURL link. map, svg only.
+headtooltip;Edges;escString;"""""";;Tooltip annotation attached to the head of an edge. cmap, svg only.
+headURL;Edges;escString;"""""";;If defined, headURL is output as part of the head label of the edge. map, svg only.
+height;Nodes;double;0.5;0.02;Height of node, in inches.
+href;Graphs, Clusters, Nodes, Edges;escString;"""""";;Synonym for URL. map, postscript, svg only.
+id;Graphs, Clusters, Nodes, Edges;escString;"""""";;Identifier for graph objects. map, postscript, svg only.
+image;Nodes;string;"""""";;Gives the name of a file containing an image to be displayed inside a node.
+imagepath;Graphs;string;"""""";;A list of directories in which to look for image files.
+imagepos;Nodes;string;"""mc""";;Controls how an image is positioned within its containing node.
+imagescale;Nodes;bool, string;false;;Controls how an image fills its containing node.
+inputscale;Graphs;double;<none>;;Scales the input positions to convert between length units. neato, fdp only.
+K;Graphs, Clusters;double;0.3;0;Spring constant used in virtual physical model. fdp, sfdp only.
+label;Edges, Nodes, Graphs, Clusters;lblString;"""\N"" (nodes)";;Text label attached to objects.
+;;;""""" (otherwise)";;
+label_scheme;Graphs;int;0;0;Whether to treat a node whose name has the form |edgelabel|* as a special node representing an edge label.. sfdp only.
+labelangle;Edges;double;-25.0;-180.0;The angle (in degrees) in polar coordinates of the head & tail edge labels..
+labeldistance;Edges;double;1.0;0.0;Scaling factor for the distance of headlabel / taillabel from the head / tail nodes..
+labelfloat;Edges;bool;false;;If true, allows edge labels to be less constrained in position.
+labelfontcolor;Edges;color;black;;Color used for headlabel and taillabel..
+labelfontname;Edges;string;"""Times-Roman""";;Font for headlabel and taillabel.
+labelfontsize;Edges;double;14.0;1.0;Font size of headlabel and taillabel.
+labelhref;Edges;escString;"""""";;Synonym for labelURL. map, svg only.
+labeljust;Graphs, Clusters;string;"""c""";;Justification for graph & cluster labels.
+labelloc;Nodes, Graphs, Clusters;string;"""t"" (clusters)";;Vertical placement of labels for nodes, root graphs and clusters.
+;;;"""b"" (root graphs)";;
+;;;"""c"" (nodes)";;
+labeltarget;Edges;escString;<none>;;Browser window to open labelURL links in. map, svg only.
+labeltooltip;Edges;escString;"""""";;Tooltip annotation attached to label of an edge. cmap, svg only.
+labelURL;Edges;escString;"""""";;If defined, labelURL is the link used for the label of an edge. map, svg only.
+landscape;Graphs;bool;false;;If true, the graph is rendered in landscape mode.
+layer;Edges, Nodes, Clusters;layerRange;"""""";;Specifies layers in which the node, edge or cluster is present.
+layerlistsep;Graphs;string;""",""";;The separator characters used to split attributes of type layerRange into a list of ranges..
+layers;Graphs;layerList;"""""";;A linearly ordered list of layer names attached to the graph.
+layerselect;Graphs;layerRange;"""""";;Selects a list of layers to be emitted.
+layersep;Graphs;string;""":\t """;;The separator characters for splitting the layers attribute into a list of layer names..
+layout;Graphs;string;"""""";;Which layout engine to use.
+len;Edges;double;1.0 (neato);;Preferred edge length, in inches. neato, fdp only.
+;;;0.3 (fdp);;
+levels;Graphs;int;INT_MAX;0.0;Number of levels allowed in the multilevel scheme. sfdp only.
+levelsgap;Graphs;double;0.0;;strictness of neato level constraints. neato only.
+lhead;Edges;string;"""""";;Logical head of an edge. dot only.
+lheight;Graphs, Clusters;double;;;Height of graph or cluster label, in inches. write only.
+linelength;Graphs;int;128;60;How long strings should get before overflowing to next line, for text output..
+lp;Edges, Graphs, Clusters;point;;;Label center position. write only.
+ltail;Edges;string;"""""";;Logical tail of an edge. dot only.
+lwidth;Graphs, Clusters;double;;;Width of graph or cluster label, in inches. write only.
+margin;Nodes, Clusters, Graphs;double, point;<device-dependent>;;For graphs, this sets x and y margins of canvas, in inches.
+maxiter;Graphs;int;100 * # nodes (mode == KK);;Sets the number of iterations used. neato, fdp only.
+;;;200 (mode == major);;
+;;;30 (mode == sgd);;
+;;;600 (fdp);;
+mclimit;Graphs;double;1.0;;Scale factor for mincross (mc) edge crossing minimiser parameters. dot only.
+mindist;Graphs;double;1.0;0.0;Specifies the minimum separation between all nodes. circo only.
+minlen;Edges;int;1;0;Minimum edge length (rank difference between head and tail). dot only.
+mode;Graphs;string;major;;Technique for optimizing the layout. neato only.
+model;Graphs;string;shortpath;;Specifies how the distance matrix is computed for the input graph. neato only.
+newrank;Graphs;bool;false;;Whether to use a single global ranking, ignoring clusters. dot only.
+nodesep;Graphs;double;0.25;0.02;In dot, nodesep specifies the minimum space between two adjacent nodes in the same rank, in inches.
+nojustify;Graphs, Clusters, Nodes, Edges;bool;false;;Whether to justify multiline text vs the previous text line (rather than the side of the container)..
+normalize;Graphs;double, bool;false;;normalizes coordinates of final layout. neato, fdp, sfdp, twopi, circo only.
+notranslate;Graphs;bool;false;;Whether to avoid translating layout to the origin point. neato only.
+nslimit;Graphs;double;;;Sets number of iterations in network simplex applications. dot only.
+nslimit1;Graphs;double;;;Sets number of iterations in network simplex applications. dot only.
+oneblock;Graphs;bool;false;;Whether to draw circo graphs around one circle.. circo only.
+ordering;Graphs, Nodes;string;"""""";;Constrains the left-to-right ordering of node edges.. dot only.
+orientation;Nodes, Graphs;double, string;0.0;-360.0;node shape rotation angle, or graph orientation.
+;;;"""""";;
+outputorder;Graphs;outputMode;breadthfirst;;Specify order in which nodes and edges are drawn.
+overlap;Graphs;string, bool;true;;Determines if and how node overlaps should be removed. fdp, neato, sfdp, circo, twopi only.
+overlap_scaling;Graphs;double;-4;-1,00E+10;Scale layout by factor, to reduce node overlap.. prism, neato, sfdp, fdp, circo, twopi only.
+overlap_shrink;Graphs;bool;true;;Whether the overlap removal algorithm should perform a compression pass to reduce the size of the layout. prism only.
+pack;Graphs;bool, int;false;;Whether each connected component of the graph should be laid out separately, and then the graphs packed together..
+packmode;Graphs;packMode;node;;How connected components should be packed.
+pad;Graphs;double, point;0.0555 (4 points);;Inches to extend the drawing area around the minimal area needed to draw the graph.
+page;Graphs;double, point;;;Width and height of output pages, in inches.
+pagedir;Graphs;pagedir;BL;;The order in which pages are emitted.
+pencolor;Clusters;color;black;;Color used to draw the bounding box around a cluster.
+penwidth;Clusters, Nodes, Edges;double;1.0;0.0;Specifies the width of the pen, in points, used to draw lines and curves.
+peripheries;Nodes, Clusters;int;<shape default> (nodes);0;Set number of peripheries used in polygonal shapes and cluster boundaries.
+;;;1 (clusters);;
+pin;Nodes;bool;false;;Keeps the node at the node's given input position. neato, fdp only.
+pos;Edges, Nodes;point, splineType;;;Position of node, or spline control points. neato, fdp only.
+quadtree;Graphs;quadType, bool;normal;;Quadtree scheme to use. sfdp only.
+quantum;Graphs;double;0.0;0.0;If quantum > 0.0, node label dimensions will be rounded to integral multiples of the quantum.
+rank;Subgraphs;rankType;;;Rank constraints on the nodes in a subgraph. dot only.
+rankdir;Graphs;rankdir;TB;;Sets direction of graph layout. dot only.
+ranksep;Graphs;double, doubleList;0.5 (dot);0.02;Specifies separation between ranks. dot, twopi only.
+;;;1.0 (twopi);;
+ratio;Graphs;double, string;;;Sets the aspect ratio (drawing height/drawing width) for the drawing.
+rects;Nodes;rect;;;Rectangles for fields of records, in points. write only.
+regular;Nodes;bool;false;;If true, force polygon to be regular..
+remincross;Graphs;bool;true;;If there are multiple clusters, whether to run edge crossing minimization a second time.. dot only.
+repulsiveforce;Graphs;double;1.0;0.0;The power of the repulsive force used in an extended Fruchterman-Reingold. sfdp only.
+resolution;Graphs;double;96.0;0.0;Synonym for dpi.. bitmap output, svg only.
+root;Graphs, Nodes;string, bool;<none> (graphs);;Specifies nodes to be used as the center of the layout. twopi, circo only.
+;;;false (nodes);;
+rotate;Graphs;int;0;;If rotate=90, sets drawing orientation to landscape.
+rotation;Graphs;double;0;;Rotates the final layout counter-clockwise by the specified number of degrees. sfdp only.
+samehead;Edges;string;"""""";;Edges with the same head and the same samehead value are aimed at the same point on the head. dot only.
+sametail;Edges;string;"""""";;Edges with the same tail and the same sametail value are aimed at the same point on the tail.. dot only.
+samplepoints;Nodes;int;8 (output);;Gives the number of points used for a circle/ellipse node.
+;;;20 (overlap and image maps);;
+scale;Graphs;double, point;;;Scales layout by the given factor after the initial layout. neato, twopi only.
+searchsize;Graphs;int;30;;During network simplex, the maximum number of edges with negative cut values to search when looking for an edge with minimum cut value.. dot only.
+sep;Graphs;addDouble, addPoint;4;;Margin to leave around nodes when removing node overlap. fdp, neato, sfdp, osage, circo, twopi only.
+shape;Nodes;shape;ellipse;;Sets the shape of a node.
+shapefile;Nodes;string;"""""";;A file containing user-supplied node content.
+showboxes;Edges, Nodes, Graphs;int;0;0;Print guide boxes for debugging. dot only.
+sides;Nodes;int;4;0;Number of sides when shape=polygon.
+size;Graphs;double, point;;;Maximum width and height of drawing, in inches.
+skew;Nodes;double;0.0;-100.0;Skew factor for shape=polygon.
+smoothing;Graphs;smoothType;"""none""";;Specifies a post-processing step used to smooth out an uneven distribution of nodes.. sfdp only.
+sortv;Graphs, Clusters, Nodes;int;0;0;Sort order of graph components for ordering packmode packing..
+splines;Graphs;bool, string;;;Controls how, and if, edges are represented.
+start;Graphs;startType;"""""";;Parameter used to determine the initial layout of nodes. neato, fdp, sfdp only.
+style;Edges, Nodes, Clusters, Graphs;style;"""""";;Set style information for components of the graph.
+stylesheet;Graphs;string;"""""";;A URL or pathname specifying an XML style sheet, used in SVG output. svg only.
+tail_lp;Edges;point;;;Position of an edge's tail label, in points.. write only.
+tailclip;Edges;bool;true;;If true, the tail of an edge is clipped to the boundary of the tail node.
+tailhref;Edges;escString;"""""";;Synonym for tailURL.. map, svg only.
+taillabel;Edges;lblString;"""""";;Text label to be placed near tail of edge.
+tailport;Edges;portPos;center;;Indicates where on the tail node to attach the tail of the edge.
+tailtarget;Edges;escString;<none>;;Browser window to use for the tailURL link. map, svg only.
+tailtooltip;Edges;escString;"""""";;Tooltip annotation attached to the tail of an edge. cmap, svg only.
+tailURL;Edges;escString;"""""";;If defined, tailURL is output as part of the tail label of the edge. map, svg only.
+target;Edges, Nodes, Graphs, Clusters;escString, string;<none>;;If the object has a URL, this attribute determines which window of the browser is used for the URL.. map, svg only.
+TBbalance;Graphs;string;'';;Which rank to move floating (loose) nodes to. dot only.
+tooltip;Nodes, Edges, Clusters, Graphs;escString;"""""";;Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. cmap, svg only.
+truecolor;Graphs;bool;;;Whether internal bitmap rendering relies on a truecolor color model or uses. bitmap output only.
+URL;Edges, Nodes, Graphs, Clusters;escString;<none>;;Hyperlinks incorporated into device-dependent output. map, postscript, svg only.
+vertices;Nodes;pointList;;;Sets the coordinates of the vertices of the node's polygon, in inches. write only.
+viewport;Graphs;viewPort;"""""";;Clipping window on final drawing.
+voro_margin;Graphs;double;0.05;0.0;Tuning margin of Voronoi technique. neato, fdp, sfdp, twopi, circo only.
+weight;Edges;int, double;1;0(dot,twopi);Weight of edge.
+;;;;1(neato,fdp);
+width;Nodes;double;0.75;0.01;Width of node, in inches.
+xdotversion;Graphs;string;;;Determines the version of xdot used in output. xdot only.
+xlabel;Edges, Nodes;lblString;"""""";;External label for a node or edge.
+xlp;Nodes, Edges;point;;;Position of an exterior label, in points. write only.
+z;Nodes;double;0.0;#ИМЯ?;Z-coordinate value for 3D layouts and displays.
+;;;;-1000;

@@ -1,0 +1,9 @@
+    [forks | attrs_lst] = tail
+    attr_map = if attrs_lst != [] do
+        [attrs | _ ]        = attrs_lst
+        list_to_map(attrs)
+    else
+        %{}
+    end
+    IO.puts("Нашли словарь атрибутов: ")
+    IO.inspect(attr_map)

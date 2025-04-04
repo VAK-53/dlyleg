@@ -1,0 +1,1 @@
+digraph G2a_b {  a -> b;  b -> c;  }

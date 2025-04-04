@@ -1,0 +1,3 @@
+digraph Ga_b_d {
+a->b->d;
+}

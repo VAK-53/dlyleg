@@ -1,0 +1,33 @@
+name,type,default,description
+color,"color, colorList",black,цвет формы узла 
+colorscheme,string,X11,схема интерпретации названий цветов 
+comment,string,,любая строка (зависит от формата) 
+distortion,double,0.0,искривление узла для shape=polygon 
+ fillcolor,"color, colorList",lightgrey/black,цвет заливки узла 
+fixedsize,"bool, string",false,текст метки не влияет на размер узла 
+fontcolor,color,black,type face color 
+fontname,string,Times-Roman,семейство шрифтов 
+fontsize,double,14,размер метки в пунктах 
+group,string,"""""",название группы горизонтального выравнивания узла 
+height,double,.5,минимальная высота в дюймах 
+id,escString,"""""",любая строка (пользовательские теги объектов вывода) 
+image,string,"""""",имя файла изображения 
+imagescale,"bool, string",false,"true, ширина, высота, оба  "
+label,lblString,название узла ,любая строка (
+labelloc,string,"""t"" (clusters)",вертикальное выравнивание метки узла 
+layer,layerRange,"""""","all, id или  id:id,  или список разделенный запятыми предыдущих "
+margin,"double, point",<device-dependent>,пространство вокруг метки 
+nojustify,bool,false,"если true, выравнивать по метке, а не по узлу "
+orientation,"double, string",0.0,угол поворота узла 
+penwidth,double,1.0,"ширина пера для рисовании границ, в пунктах "
+peripheries,int,<shape default> (nodes),количество границ узла 
+regular,bool,false,принудительное придание многоугольнику правильной формы 
+samplepoints,int,8 (output),количество вершин для преобразования 
+shape,shape,ellipse,форма узла
+sides,int,4,количество сторон для shape=polygon
+skew,double,0.0,наклон узла для shape=polygon
+style,style,"""""","параметры графа, например, bold, dotted, filled; см. раздел 2.4"
+target,"escString, string",<none>,"если задан URL, определяет окно браузера для URL"
+tooltip,escString,"""""",аннотация всплывающей подсказки
+ URL,escString,<none>,"URL, связанный с узлом (зависит от формата)"
+ width , double ,.75,минимальная ширина в дюймах

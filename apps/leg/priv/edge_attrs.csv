@@ -1,0 +1,54 @@
+name,type,default,description
+arrowhead,arrowType,normal,стиль наконечника стрелки в головной части
+arrowsize,double,1.0,коэффициент масштабирования для наконечников стрелок
+arrowtail,arrowType,normal,стиль наконечника стрелки в хвостовой части
+color,"color, colorList",black,цвет обводки ребра
+colorscheme,string,"""""",схема интерпретации названий цветов
+comment,string,"""""",любая строка (зависит от формата)
+constraint,bool,true,использовать ребро для влияния на ранжирование узлов
+decorate,bool,false,"если установлено, то рисует линию, соединяющую метки с их ребрами"
+dir,dirType,forward (directed),"forward, back, both или none"
+edgehref,escString,"""""",синоним для edgeURL
+edgetarget,escString,<none>,"если задан URL, определяет окно браузера для URL"
+edgetooltip,escString,"""""","аннотация всплывающей подсказки для участка ребра, свободной от меток"
+edgeURL,escString,"""""","URL, прикрепленный к части ребра, свободной от меток"
+fontcolor,color,black,цвет лицевой стороны шрифта
+fontname,string,Times-Roman,семейство шрифтов
+fontsize,double,14,размер метки в пунктах
+headclip,bool,true,"если false, то ребро не обрезается по границе головного узла"
+headhref,escString,"""""",синоним для headURL
+headlabel,lblString,"""""","метка, размещаемая рядом с головной частью ребра"
+headport,portPos,center,"n,ne,e,se,s,sw,w,nw"
+headtarget,escString,<none>,"если задан URL, определяет окно браузера для URL"
+headtooltip,escString,"""""",аннотация всплывающей подсказки вблизи головной части ребра
+headURL,escString,"""""","URL, прикрепленный к метке головной части"
+href,escString,"""""",Псевдоним для URL
+id,escString,"""""",любая строка (пользовательские теги объектов вывода)
+label,lblString,"""\N"" (nodes)",метка ребра
+labelangle,double,-25.0,"угол в градусах, на который головная или хвостовая метка поворачивается относительно ребра"
+labeldistance,double,1.0,масштабный коэффициент для расстояния головной или хвостовой метки от узла
+labelfloat,bool,false,уменьшение ограничений на размещение меток на ребрах
+labelfontcolor,color,black,лицевой цвет головной и хвостовой меток
+labelfontname,string,Times-Roman,тип шрифта головной и хвостовой меток
+labelfontsize,double,14,размер в пунктах головной и хвостовой меток
+labelhref,escString,"""""",синоним для labelURL
+labelURL,escString,"""""","URL для метки, переопределяет URL ребра"
+labeltarget,escString,<none>,"если задан URL или labelURL, определяет окно браузера для URL"
+labeltooltip,escString,"""""",аннотация всплывающей подсказки рядом с меткой
+layer,layerRange,"""""","all, id или id:id, или список предыдущих, разделенный запятыми"
+lhead,string,"""""","название кластера, используемого в качестве головной частью ребра"
+ltail,string,"""""","название кластера, используемого в качестве хвоста ребра"
+minlen,int,1,минимальное ранговое расстояние между головой и хвостом
+penwidth,double,1.0,"ширина пера для рисования штриха ребра, в пунктах"
+samehead,string,"""""",метка для головного узла;  головы ребер с одинаковыми метками объединяются в один порт 
+sametail,string,"""""",метка для хвостового узла;  хвосты ребер с одинаковыми метками объединяются в один порт 
+style,string,"""""","графические параметры, например, bold, dotted, filled"
+tailclip,bool,true,"если false, то ребро не обрезается по границе хвостового узла"
+tailhref,escString,"""""",синоним для tailURL
+taillabel,lblString,"""""","метка, размещаемая вблизи хвоста ребра"
+tailtarget,escString,<none>,"если установлено значение tailURL, определяет окно браузера для URL"
+tailtooltip,escString,"""""",аннотация всплывающей подсказки вблизи хвостовой части ребра
+tailURL,escString,"""""","URL, прикрепленный к метке хвоста"
+target,"escString, string",<none>,"если задан URL, определяет окно браузера для URL"
+tooltip,escString,,аннотация всплывающей подсказки
+weight,"int, double",1,целочисленная стоимость растягивания ребра

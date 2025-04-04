@@ -1,0 +1,4 @@
+digraph Gat_a_b {
+size  = "4,4";
+a->b;
+}

@@ -1,0 +1,1 @@
+digraph Diamond {a -> {d; f} -> g;}

@@ -1,0 +1,212 @@
+_background	Graphs	xdot	<none>		Строка в xdotформате, задающая произвольный фон.	A string in the xdot format specifying an arbitrary background.		_background	Графы	xdot	<none>	
+area	Nodes, Clusters	double	1.0	>0	Указывает предпочтительную область для узла или пустого кластера. только лоскутное одеяло .	Indicates the preferred area for a node or empty cluster. patchwork only.		area	Узлы, Кластеры	двойной	1.0	>0
+arrowhead	Edges	arrowType	normal		Стиль наконечника стрелы на головном узле ребра.	Style of arrowhead on the head node of an edge.		arrowhead	Края	arrowТип	normal	
+arrowsize	Edges	double	1.0	0.0	Мультипликативный масштабный коэффициент для наконечников стрел.	Multiplicative scale factor for arrowheads.		arrowsize	Края	двойной	1.0	0.0
+arrowtail	Edges	arrowType	normal		Стиль наконечника стрелы на хвостовом узле кромки.	Style of arrowhead on the tail node of an edge.		arrowtail	Края	arrowТип	normal	
+bb	Clusters, Graphs	rect			Ограничительная рамка рисунка в точках. Только запись.	Bounding box of drawing in points. write only.		bb	Кластеры, Графы	прям		
+beautify	Graphs	bool	false		Следует ли рисовать листовые узлы равномерно по кругу вокруг корневого узла в sfdp.. только sfdp .	Whether to draw leaf nodes uniformly in a circle around the root node in sfdp.. sfdp only.		beautify	Графы	бул	false	
+bgcolor	Graphs, Clusters	color, colorList	<none>		Цвет фона холста.	Canvas background color.		bgcolor	Графы, Кластеры	цвет , список цветов	<none>	
+center	Graphs	bool	false		Центрировать ли рисунок на выходном холсте.	Whether to center the drawing in the output canvas.		center	Графы	бул	false	
+charset	Graphs	string	"""UTF-8"""		Кодировка символов, используемая при интерпретации входной строки как текстовой метки.	Character encoding used when interpreting string input as a text label..		charset	Графы	нить	"""UTF-8"""	
+class	Edges, Nodes, Clusters, Graphs	string	""""""		Имена классов для присоединения к элементу SVG узла, ребра, графика или кластера. Только svg .	Classnames to attach to the node, edge, graph, or cluster's SVG element. svg only.		class	Ребра, узлы, кластеры, графы	нить	""""""	
+cluster	Clusters, Subgraphs	bool	false		Является ли подграф кластером.	Whether the subgraph is a cluster.		cluster	Кластеры, Подграфы	бул	false	
+clusterrank	Graphs	clusterMode	local		Режим, используемый для обработки кластеров. Только точка .	Mode used for handling clusters. dot only.		clusterrank	Графы	clusterMode	local	
+color	Edges, Nodes, Clusters	color, colorList	black		Основной цвет рисунка для Графов, а не текста.	Basic drawing color for graphics, not text.		color	Края, узлы, кластеры	цвет , список цветов	black	
+colorscheme	Edges, Nodes, Clusters, Graphs	string	""""""		Пространство имен цветовой схемы: контекст для интерпретации названий цветов.	A color scheme namespace: the context for interpreting color names.		colorscheme	Ребра, узлы, кластеры, графы	нить	""""""	
+comment	Edges, Nodes, Graphs	string	""""""		Комментарии вставляются в вывод.	Comments are inserted into output.		comment	Ребра, узлы, графы	нить	""""""	
+compound	Graphs	bool	false		Если true, разрешить границы между кластерами. только точка .	If true, allow edges between clusters. dot only.		compound	Графы	бул	false	
+concentrate	Graphs	bool	false		Если это так, используйте краевые концентраторы.	If true, use edge concentrators.		concentrate	Графы	бул	false	
+constraint	Edges	bool	true		Если false, ребро не используется при ранжировании узлов. Только точка .	If false, the edge is not used in ranking the nodes. dot only.		constraint	Края	бул	true	
+Damping	Graphs	double	0.99	0.0	Фактор демпфирования силовых движений.. только нето .	Factor damping force motions.. neato only.		Damping	Графы	двойной	0.99	0.0
+decorate	Edges	bool	false		Соединять ли кромочную метку с краем линией.	Whether to connect the edge label to the edge with a line.		decorate	Края	бул	false	
+defaultdist	Graphs	double	1+(avg. len)*sqrt(|V|)	epsilon	Расстояние между узлами в отдельных связанных компонентах. Только Neeto .	The distance between nodes in separate connected components. neato only.		defaultdist	Графы	двойной	1+(avg. len)*sqrt(|V|)	epsilon
+dim	Graphs	int	2	2	Установите количество измерений, используемых для макета. Только neato , fdp , sfdp .	Set the number of dimensions used for the layout. neato, fdp, sfdp only.		dim	Графы	инт	2	2
+dimen	Graphs	int	2	2	Установите количество измерений, используемых для рендеринга. Только neato , fdp , sfdp .	Set the number of dimensions used for rendering. neato, fdp, sfdp only.		dimen	Графы	инт	2	2
+dir	Edges	dirType	"forward (directed)
+none (undirected)"		Тип кромки для рисования наконечников стрел.	Edge type for drawing arrowheads.		dir	Края	dirType	"forward(направленный)
+none(ненаправленный)"	
+diredgeconstraints	Graphs	string, bool	false		Ограничивать ли большинство рёбер направленностью вниз. Только Neato .	Whether to constrain most edges to point downwards. neato only.		diredgeconstraints	Графы	строка , логический	false	
+distortion	Nodes	double	0.0	-100.0	Коэффициент искажения для . shape=polygon	Distortion factor for shape=polygon.		distortion	Узлы	двойной	0.0	-100.0
+dpi	Graphs	double	96.0	0.0	Указывает ожидаемое количество пикселей на дюйм на устройстве отображения. Вывод в формате bitmap, только svg .	Specifies the expected number of pixels per inch on a display device. bitmap output, svg only.		dpi	Графы	двойной	96.0	0.0
+edgehref	Edges	escString	""""""		Синоним для edgeURL. map, только svg .	Synonym for edgeURL. map, svg only.		edgehref	Края	escСтрока	""""""	
+edgetarget	Edges	escString	<none>		Окно браузера, используемое для edgeURLссылки. Карта, только svg .	Browser window to use for the edgeURL link. map, svg only.		edgetarget	Края	escСтрока	<none>	
+edgetooltip	Edges	escString	""""""		Подсказка-аннотация, прикрепленная к части ребра, не являющейся меткой. cmap , только svg .	Tooltip annotation attached to the non-label part of an edge. cmap, svg only.		edgetooltip	Края	escСтрока	""""""	
+edgeURL	Edges	escString	""""""		Ссылка на части ребра, не имеющие меток. Карта, только svg .	The link for the non-label parts of an edge. map, svg only.		edgeURL	Края	escСтрока	""""""	
+epsilon	Graphs	double	".0001 * # nodes (mode == KK)
+.0001 (mode == major)
+.01 (mode == sgd)"		Прерывающее состояние. Только неито .	Terminating condition. neato only.		epsilon	Графы	двойной	".0001 * # nodes(режим == KK)
+.0001(режим == major)
+.01(режим == sgd)"	
+esep	Graphs	addDouble, addPoint	3		Поле, используемое вокруг полигонов для маршрутизации кромок сплайна. Только для Neato , FDP , SFD , Osage, Circo , TwoPi .	Margin used around polygons for purposes of spline edge routing. neato, fdp, sfdp, osage, circo, twopi only.		esep	Графы	addDouble , addPoint	3	
+fillcolor	Nodes, Edges, Clusters	color, colorList	"lightgrey (nodes)
+black (clusters)"		Цвет, используемый для заливки фона узла или кластера.	Color used to fill the background of a node or cluster.		fillcolor	Узлы, ребра, кластеры	цвет , список цветов	"lightgrey(узлы)
+black(кластеры)"	
+fixedsize	Nodes	bool, string	false		Использовать ли указанные атрибуты ширины и высоты для выбора размера узла (вместо изменения размера в соответствии с содержимым узла).	Whether to use the specified width and height attributes to choose node size (rather than sizing to fit the node contents).		fixedsize	Узлы	бул , строка	false	
+fontcolor	Edges, Nodes, Graphs, Clusters	color	black		Цвет, используемый для текста.	Color used for text.		fontcolor	Ребра, узлы, графы, кластеры	цвет	black	
+fontname	Edges, Nodes, Graphs, Clusters	string	"""Times-Roman"""		Шрифт, используемый для текста.	Font used for text.		fontname	Ребра, узлы, графы, кластеры	нить	"""Times-Roman"""	
+fontnames	Graphs	string	""""""		Позволяет пользователю контролировать, как основные имена шрифтов будут представлены в выходных данных SVG. Только svg .	Allows user control of how basic fontnames are represented in SVG output. svg only.		fontnames	Графы	нить	""""""	
+fontpath	Graphs	string	<system-dependent>		Список каталогов, используемых libgd для поиска растровых шрифтов.	Directory list used by libgd to search for bitmap fonts.		fontpath	Графы	нить	<system-dependent>	
+fontsize	Edges, Nodes, Graphs, Clusters	double	14.0	1.0	Размер шрифта в пунктах , используемый для текста.	Font size, in points, used for text.		fontsize	Ребра, узлы, графы, кластеры	двойной	14.0	1.0
+forcelabels	Graphs	bool	true		Следует ли принудительно размещать все xlabels, даже если они перекрываются.	Whether to force placement of all xlabels, even if overlapping.		forcelabels	Графы	бул	true	
+gradientangle	Nodes, Clusters, Graphs	int	0	0	Если используется градиентная заливка, это определяет угол заливки.	If a gradient fill is being used, this determines the angle of the fill.		gradientangle	Узлы, Кластеры, Графы	инт	0	0
+group	Nodes	string	""""""		Название группы узлов, для объединения ребер без пересечений. Только точка .	Name for a group of nodes, for bundling edges avoiding crossings.. dot only.		group	Узлы	нить	""""""	
+head_lp	Edges	point			Центральное положение метки заголовка ребра. только запись.	Center position of an edge's head label. write only.		head_lp	Края	точка		
+headclip	Edges	bool	true		Если true, начало ребра обрезается по границе головного узла.	If true, the head of an edge is clipped to the boundary of the head node.		headclip	Края	бул	true	
+headhref	Edges	escString	""""""		Синоним для headURL. map, только svg .	Synonym for headURL. map, svg only.		headhref	Края	escСтрока	""""""	
+headlabel	Edges	lblString	""""""		Текстовую метку следует разместить у верхнего края.	Text label to be placed near head of edge.		headlabel	Края	lblСтрока	""""""	
+headport	Edges	portPos	center		Указывает, где на головном узле прикрепить головку ребра.	Indicates where on the head node to attach the head of the edge.		headport	Края	портPos	center	
+headtarget	Edges	escString	<none>		Окно браузера, используемое для headURLссылки. Карта, только svg .	Browser window to use for the headURL link. map, svg only.		headtarget	Края	escСтрока	<none>	
+headtooltip	Edges	escString	""""""		Подсказка-аннотация, прикрепленная к началу ребра. cmap , только svg .	Tooltip annotation attached to the head of an edge. cmap, svg only.		headtooltip	Края	escСтрока	""""""	
+headURL	Edges	escString	""""""		Если определено, headURLвыводится как часть заголовка ребра. Карта, только svg .	If defined, headURL is output as part of the head label of the edge. map, svg only.		headURL	Края	escСтрока	""""""	
+height	Nodes	double	0.5	0.02	Высота узла в дюймах.	Height of node, in inches.		height	Узлы	двойной	0.5	0.02
+href	Graphs, Clusters, Nodes, Edges	escString	""""""		Синоним для URL. map, postscript , только svg .	Synonym for URL. map, postscript, svg only.		href	Графы, Кластеры, Узлы, Ребра	escСтрока	""""""	
+id	Graphs, Clusters, Nodes, Edges	escString	""""""		Идентификатор для графических объектов. Только map, postscript , svg .	Identifier for graph objects. map, postscript, svg only.		id	Графы, Кластеры, Узлы, Ребра	escСтрока	""""""	
+image	Nodes	string	""""""		Задает имя файла, содержащего изображение, которое будет отображаться внутри узла.	Gives the name of a file containing an image to be displayed inside a node.		image	Узлы	нить	""""""	
+imagepath	Graphs	string	""""""		Список каталогов, в которых следует искать файлы изображений.	A list of directories in which to look for image files.		imagepath	Графы	нить	""""""	
+imagepos	Nodes	string	"""mc"""		Управляет расположением изображения в содержащем его узле.	Controls how an image is positioned within its containing node.		imagepos	Узлы	нить	"""mc"""	
+imagescale	Nodes	bool, string	false		Управляет тем, как изображение заполняет содержащий его узел.	Controls how an image fills its containing node.		imagescale	Узлы	бул , строка	false	
+inputscale	Graphs	double	<none>		Масштабирует входные позиции для преобразования между единицами длины. Только neato , fdp .	Scales the input positions to convert between length units. neato, fdp only.		inputscale	Графы	двойной	<none>	
+K	Graphs, Clusters	double	0.3	0	Жесткость пружины, используемая в виртуальной физической модели. Только fdp , sfdp .	Spring constant used in virtual physical model. fdp, sfdp only.		K	Графы, Кластеры	двойной	0.3	0
+label	Edges, Nodes, Graphs, Clusters	lblString	"""\N"" (nodes)
+"""" (otherwise)"		Текстовая метка, прикрепленная к объектам.	Text label attached to objects.		label	Ребра, узлы, графы, кластеры	lblСтрока	"""\N""(узлы)
+""""(иначе)"	
+label_scheme	Graphs	int	0	0	Следует ли рассматривать узел, имя которого имеет форму, |edgelabel|*как специальный узел, представляющий метку ребра.. только sfdp .	Whether to treat a node whose name has the form |edgelabel|* as a special node representing an edge label.. sfdp only.		label_scheme	Графы	инт	0	0
+labelangle	Edges	double	-25.0	-180.0	Угол (в градусах) в полярных координатах меток кромки головы и хвоста.	The angle (in degrees) in polar coordinates of the head & tail edge labels..		labelangle	Края	двойной	-25.0	-180.0
+labeldistance	Edges	double	1.0	0.0	Коэффициент масштабирования для расстояния от headlabel/ taillabelдо головного/хвостового узлов.	Scaling factor for the distance of headlabel / taillabel from the head / tail nodes..		labeldistance	Края	двойной	1.0	0.0
+labelfloat	Edges	bool	false		Если установлено значение true, позволяет сделать метки краев менее ограниченными по положению.	If true, allows edge labels to be less constrained in position.		labelfloat	Края	бул	false	
+labelfontcolor	Edges	color	black		Цвет, используемый для headlabelи taillabel..	Color used for headlabel and taillabel..		labelfontcolor	Края	цвет	black	
+labelfontname	Edges	string	"""Times-Roman"""		Шрифт для headlabelи taillabel.	Font for headlabel and taillabel.		labelfontname	Края	нить	"""Times-Roman"""	
+labelfontsize	Edges	double	14.0	1.0	Размер шрифта headlabelи taillabel.	Font size of headlabel and taillabel.		labelfontsize	Края	двойной	14.0	1.0
+labelhref	Edges	escString	""""""		Синоним для labelURL. map, только svg .	Synonym for labelURL. map, svg only.		labelhref	Края	escСтрока	""""""	
+labeljust	Graphs, Clusters	string	"""c"""		Обоснование меток графиков и кластеров.	Justification for graph & cluster labels.		labeljust	Графы, Кластеры	нить	"""c"""	
+labelloc	Nodes, Graphs, Clusters	string	"""t"" (clusters)
+""b"" (root graphs)
+""c"" (nodes)"		Вертикальное размещение меток для узлов, корневых графов и кластеров.	Vertical placement of labels for nodes, root graphs and clusters.		labelloc	Узлы, Графы, Кластеры	нить	"""t""(кластеры)
+""b""(корневые графы)
+""c""(узлы)"	
+labeltarget	Edges	escString	<none>		Окно браузера для открытия labelURLссылок. Карта, только svg .	Browser window to open labelURL links in. map, svg only.		labeltarget	Края	escСтрока	<none>	
+labeltooltip	Edges	escString	""""""		Подсказка-аннотация, прикрепленная к метке ребра. cmap , только svg .	Tooltip annotation attached to label of an edge. cmap, svg only.		labeltooltip	Края	escСтрока	""""""	
+labelURL	Edges	escString	""""""		Если определено, labelURLссылка используется для метки ребра. Карта, только svg .	If defined, labelURL is the link used for the label of an edge. map, svg only.		labelURL	Края	escСтрока	""""""	
+landscape	Graphs	bool	false		Если true, график отображается в альбомной ориентации.	If true, the graph is rendered in landscape mode.		landscape	Графы	бул	false	
+layer	Edges, Nodes, Clusters	layerRange	""""""		Указывает слои, в которых присутствует узел, ребро или кластер.	Specifies layers in which the node, edge or cluster is present.		layer	Края, узлы, кластеры	слойДиапазон	""""""	
+layerlistsep	Graphs	string	""","""		Символы-разделители, используемые для разделения атрибутов типа layerRangeна список диапазонов.	The separator characters used to split attributes of type layerRange into a list of ranges..		layerlistsep	Графы	нить	""","""	
+layers	Graphs	layerList	""""""		Линейно упорядоченный список имен слоев, прикрепленных к графику.	A linearly ordered list of layer names attached to the graph.		layers	Графы	список слоев	""""""	
+layerselect	Graphs	layerRange	""""""		Выбирает список слоев для эмиссии.	Selects a list of layers to be emitted.		layerselect	Графы	слойДиапазон	""""""	
+layersep	Graphs	string	""":\t """		Символы-разделители для разбиения layersатрибута на список имен слоев.	The separator characters for splitting the layers attribute into a list of layer names..		layersep	Графы	нить	""":\t """	
+layout	Graphs	string	""""""		Какой движок компоновки использовать.	Which layout engine to use.		layout	Графы	нить	""""""	
+len	Edges	double	"1.0 (neato)
+0.3 (fdp)"		Предпочтительная длина кромки, в дюймах. только для чистовой отделки , fdp .	Preferred edge length, in inches. neato, fdp only.		len	Края	двойной	"1.0(neato)
+0.3(fdp)"	
+levels	Graphs	int	INT_MAX	0.0	Количество уровней, разрешенных в многоуровневой схеме. Только sfdp .	Number of levels allowed in the multilevel scheme. sfdp only.		levels	Графы	инт	INT_MAX	0.0
+levelsgap	Graphs	double	0.0		строгость ограничений уровня Neeto. только Neeto .	strictness of neato level constraints. neato only.		levelsgap	Графы	двойной	0.0	
+lhead	Edges	string	""""""		Логическая вершина ребра. Только точка .	Logical head of an edge. dot only.		lhead	Края	нить	""""""	
+lheight	Graphs, Clusters	double			Высота метки графика или кластера в дюймах. только запись.	Height of graph or cluster label, in inches. write only.		lheight	Графы, Кластеры	двойной		
+linelength	Graphs	int	128	60	Какой длины должны быть строки перед переполнением на следующую строку для текстового вывода.	How long strings should get before overflowing to next line, for text output..		linelength	Графы	инт	128	60
+lp	Edges, Graphs, Clusters	point			Центральная позиция метки. Только запись.	Label center position. write only.		lp	Ребра, Графы, Кластеры	точка		
+ltail	Edges	string	""""""		Логический хвост ребра. Только точка .	Logical tail of an edge. dot only.		ltail	Края	нить	""""""	
+lwidth	Graphs, Clusters	double			Ширина метки графика или кластера в дюймах. только запись.	Width of graph or cluster label, in inches. write only.		lwidth	Графы, Кластеры	двойной		
+margin	Nodes, Clusters, Graphs	double, point	<device-dependent>		Для графиков это устанавливает поля холста по осям x и y в дюймах.	For graphs, this sets x and y margins of canvas, in inches.		margin	Узлы, Кластеры, Графы	двойной , точка	<device-dependent>	
+maxiter	Graphs	int	"100 * # nodes (mode == KK)
+200 (mode == major)
+30 (mode == sgd)
+600 (fdp)"		Устанавливает количество используемых итераций. только neato , fdp .	Sets the number of iterations used. neato, fdp only.		maxiter	Графы	инт	"100 * # nodes(режим == KK)
+200(режим == основной)
+30(режим == sgd)
+600(fdp)"	
+mclimit	Graphs	double	1.0		Масштабный коэффициент для параметров минимизатора пересечения ребер mincross (mc). Только точка .	Scale factor for mincross (mc) edge crossing minimiser parameters. dot only.		mclimit	Графы	двойной	1.0	
+mindist	Graphs	double	1.0	0.0	Указывает минимальное расстояние между всеми узлами. только circo .	Specifies the minimum separation between all nodes. circo only.		mindist	Графы	двойной	1.0	0.0
+minlen	Edges	int	1	0	Минимальная длина ребра (разница в рангах между головой и хвостом). Только точка .	Minimum edge length (rank difference between head and tail). dot only.		minlen	Края	инт	1	0
+mode	Graphs	string	major		Методика оптимизации макета. Только Neato .	Technique for optimizing the layout. neato only.		mode	Графы	нить	major	
+model	Graphs	string	shortpath		Указывает, как вычисляется матрица расстояний для входного графа. Только для neato .	Specifies how the distance matrix is computed for the input graph. neato only.		model	Графы	нить	shortpath	
+newrank	Graphs	bool	false		Использовать ли единый глобальный рейтинг, игнорируя кластеры. Только точка .	Whether to use a single global ranking, ignoring clusters. dot only.		newrank	Графы	бул	false	
+nodesep	Graphs	double	0.25	0.02	В определяет минимальное расстояние между двумя соседними узлами в одном ранге в дюймах dot.nodesep	In dot, nodesep specifies the minimum space between two adjacent nodes in the same rank, in inches.		nodesep	Графы	двойной	0.25	0.02
+nojustify	Graphs, Clusters, Nodes, Edges	bool	false		Выравнивать ли многострочный текст по предыдущей строке текста (а не по краю контейнера).	Whether to justify multiline text vs the previous text line (rather than the side of the container)..		nojustify	Графы, Кластеры, Узлы, Ребра	бул	false	
+normalize	Graphs	double, bool	false		нормализует координаты окончательного макета. Только neato , fdp , sfdp , twopi , circo .	normalizes coordinates of final layout. neato, fdp, sfdp, twopi, circo only.		normalize	Графы	двойной , бул	false	
+notranslate	Graphs	bool	false		Следует ли избегать перевода макета в исходную точку. Только Neato .	Whether to avoid translating layout to the origin point. neato only.		notranslate	Графы	бул	false	
+nslimit	Graphs	double			Устанавливает количество итераций в сетевых симплексных приложениях. только точка .	Sets number of iterations in network simplex applications. dot only.		nslimit	Графы	двойной		
+nslimit1	Graphs	double			Устанавливает количество итераций в сетевых симплексных приложениях. только точка .	Sets number of iterations in network simplex applications. dot only.		nslimit1	Графы	двойной		
+oneblock	Graphs	bool	false		Рисовать ли циркограммы вокруг одного круга... только цирко .	Whether to draw circo graphs around one circle.. circo only.		oneblock	Графы	бул	false	
+ordering	Graphs, Nodes	string	""""""		Ограничивает порядок рёбер узлов слева направо. Только точка .	Constrains the left-to-right ordering of node edges.. dot only.		ordering	Графы, Узлы	нить	""""""	
+orientation	Nodes, Graphs	double, string	"0.0
+"""""	-360.0	угол поворота формы узла или ориентация графика.	node shape rotation angle, or graph orientation.		orientation	Узлы, Графы	двойной , струнный	"0.0
+"""""	-360.0
+outputorder	Graphs	outputMode	breadthfirst		Укажите порядок, в котором будут отрисовываться узлы и ребра.	Specify order in which nodes and edges are drawn.		outputorder	Графы	Режим вывода	breadthfirst	
+overlap	Graphs	string, bool	true		Определяет, следует ли удалять перекрытия узлов и как это сделать. Только fdp , neato , sfdp , circo , twopi .	Determines if and how node overlaps should be removed. fdp, neato, sfdp, circo, twopi only.		overlap	Графы	строка , логический	true	
+overlap_scaling	Graphs	double	-4	-10000000000	Масштабируйте макет по коэффициенту, чтобы уменьшить перекрытие узлов. Только prism , neato , sfdp , fdp , circo , twopi .	Scale layout by factor, to reduce node overlap.. prism, neato, sfdp, fdp, circo, twopi only.		overlap_scaling	Графы	двойной	-4	-10000000000
+overlap_shrink	Graphs	bool	true		Должен ли алгоритм удаления перекрытий выполнять проход сжатия для уменьшения размера макета. только призма .	Whether the overlap removal algorithm should perform a compression pass to reduce the size of the layout. prism only.		overlap_shrink	Графы	бул	true	
+pack	Graphs	bool, int	false		Следует ли размещать каждый связный компонент графа отдельно, а затем упаковывать графы вместе.	Whether each connected component of the graph should be laid out separately, and then the graphs packed together..		pack	Графы	bool , int	false	
+packmode	Graphs	packMode	node		Как следует упаковывать соединенные компоненты.	How connected components should be packed.		packmode	Графы	packMode	node	
+pad	Graphs	double, point	0.0555 (4 points)		Дюймы для расширения области рисования вокруг минимальной области, необходимой для рисования графика.	Inches to extend the drawing area around the minimal area needed to draw the graph.		pad	Графы	двойной , точка	0.0555 (4 балла)	
+page	Graphs	double, point			Ширина и высота выходных страниц в дюймах.	Width and height of output pages, in inches.		page	Графы	двойной , точка		
+pagedir	Graphs	pagedir	BL		Порядок, в котором выдаются страницы.	The order in which pages are emitted.		pagedir	Графы	pagedir	BL	
+pencolor	Clusters	color	black		Цвет, используемый для рисования ограничивающей рамки вокруг кластера.	Color used to draw the bounding box around a cluster.		pencolor	Кластеры	цвет	black	
+penwidth	Clusters, Nodes, Edges	double	1.0	0.0	Задает ширину пера в точках, используемого для рисования линий и кривых.	Specifies the width of the pen, in points, used to draw lines and curves.		penwidth	Кластеры, узлы, ребра	двойной	1.0	0.0
+peripheries	Nodes, Clusters	int	"<shape default> (nodes)
+1 (clusters)"	0	Установите количество периферий, используемых в многоугольных фигурах и границах кластеров.	Set number of peripheries used in polygonal shapes and cluster boundaries.		peripheries	Узлы, Кластеры	инт	"<shape default>(узлы)
+1(кластеры)"	0
+pin	Nodes	bool	false		Сохраняет узел в заданной входной позиции узла. только neato , fdp .	Keeps the node at the node's given input position. neato, fdp only.		pin	Узлы	бул	false	
+pos	Edges, Nodes	point, splineType			Положение узлов или контрольных точек сплайна. Neato , только fdp .	Position of node, or spline control points. neato, fdp only.		pos	Края, Узлы	точка , тип сплайна		
+quadtree	Graphs	quadType, bool	normal		Использовать схему Quadtree. Только sfdp .	Quadtree scheme to use. sfdp only.		quadtree	Графы	quadType , логический	normal	
+quantum	Graphs	double	0.0	0.0	Если quantum > 0.0, размеры метки узла будут округлены до целых кратных кванту.	If quantum > 0.0, node label dimensions will be rounded to integral multiples of the quantum.		quantum	Графы	двойной	0.0	0.0
+rank	Subgraphs	rankType			Ограничения ранга для узлов в подграфе. только точка .	Rank constraints on the nodes in a subgraph. dot only.		rank	Подграфы	рангТип		
+rankdir	Graphs	rankdir	TB		Задает направление макета графика. Только точка .	Sets direction of graph layout. dot only.		rankdir	Графы	rankdir	TB	
+ranksep	Graphs	double, doubleList	"0.5 (dot)
+1.0 (twopi)"	0.02	Указывает разделение между рангами. Только точка , двапи .	Specifies separation between ranks. dot, twopi only.		ranksep	Графы	двойной , двойнойСписок	"0.5(точка)
+1.0(двапи)"	0.02
+ratio	Graphs	double, string			Устанавливает соотношение сторон (высота рисунка/ширина рисунка) для рисунка.	Sets the aspect ratio (drawing height/drawing width) for the drawing.		ratio	Графы	двойной , струнный		
+rects	Nodes	rect			Прямоугольники для полей записей, в точках . Только запись.	Rectangles for fields of records, in points. write only.		rects	Узлы	прям		
+regular	Nodes	bool	false		Если true, сделать многоугольник правильным.	If true, force polygon to be regular..		regular	Узлы	бул	false	
+remincross	Graphs	bool	true		Если кластеров несколько, следует ли запускать минимизацию пересечения ребер второй раз... только точка .	If there are multiple clusters, whether to run edge crossing minimization a second time.. dot only.		remincross	Графы	бул	true	
+repulsiveforce	Graphs	double	1.0	0.0	Мощность отталкивающей силы, используемой в расширенном методе Фрухтермана-Рейнгольда. Только sfdp .	The power of the repulsive force used in an extended Fruchterman-Reingold. sfdp only.		repulsiveforce	Графы	двойной	1.0	0.0
+resolution	Graphs	double	96.0	0.0	Синоним для dpi.. растрового вывода, только svg .	Synonym for dpi.. bitmap output, svg only.		resolution	Графы	двойной	96.0	0.0
+root	Graphs, Nodes	string, bool	"<none> (graphs)
+false (nodes)"		Указывает узлы, которые будут использоваться в качестве центра макета. только twopi , circo .	Specifies nodes to be used as the center of the layout. twopi, circo only.		root	Графы, Узлы	строка , логический	"<none>(Графы)
+false(узлы)"	
+rotate	Graphs	int	0		Если rotate=90, то ориентация чертежа устанавливается на альбомную.	If rotate=90, sets drawing orientation to landscape.		rotate	Графы	инт	0	
+rotation	Graphs	double	0		Поворачивает окончательный макет против часовой стрелки на указанное число градусов. Только sfdp .	Rotates the final layout counter-clockwise by the specified number of degrees. sfdp only.		rotation	Графы	двойной	0	
+samehead	Edges	string	""""""		Ребра с одинаковой головкой и одинаковым sameheadзначением направлены в одну и ту же точку на головке. Только точка .	Edges with the same head and the same samehead value are aimed at the same point on the head. dot only.		samehead	Края	нить	""""""	
+sametail	Edges	string	""""""		Ребра с одинаковым хвостом и одинаковым sametailзначением направлены в одну и ту же точку на хвосте, то есть только в точку .	Edges with the same tail and the same sametail value are aimed at the same point on the tail.. dot only.		sametail	Края	нить	""""""	
+samplepoints	Nodes	int	"8 (output)
+20 (overlap and image maps)"		Указывает количество точек, используемых для узла круга/эллипса.	Gives the number of points used for a circle/ellipse node.		samplepoints	Узлы	инт	"8(выход)
+20(карты перекрытий и изображений)"	
+scale	Graphs	double, point			Масштабирует макет с указанным коэффициентом после исходного макета. Только neato , twopi .	Scales layout by the given factor after the initial layout. neato, twopi only.		scale	Графы	двойной , точка		
+searchsize	Graphs	int	30		В симплексном сетевом алгоритме максимальное количество ребер с отрицательными значениями отсечения для поиска при поиске ребра с минимальным значением отсечения. Только точка .	During network simplex, the maximum number of edges with negative cut values to search when looking for an edge with minimum cut value.. dot only.		searchsize	Графы	инт	30	
+sep	Graphs	addDouble, addPoint	4		Отступ, оставляемый вокруг узлов при удалении перекрытия узлов. Только fdp , neato , sfdp , osage, circo , twopi .	Margin to leave around nodes when removing node overlap. fdp, neato, sfdp, osage, circo, twopi only.		sep	Графы	addDouble , addPoint	4	
+shape	Nodes	shape	ellipse		Задает форму узла.	Sets the shape of a node.		shape	Узлы	форма	ellipse	
+shapefile	Nodes	string	""""""		Файл, содержащий содержимое узла, предоставленное пользователем.	A file containing user-supplied node content.		shapefile	Узлы	нить	""""""	
+showboxes	Edges, Nodes, Graphs	int	0	0	Распечатать направляющие рамки для отладки. только точка .	Print guide boxes for debugging. dot only.		showboxes	Ребра, узлы, графы	инт	0	0
+sides	Nodes	int	4	0	Число сторон при shape=polygon.	Number of sides when shape=polygon.		sides	Узлы	инт	4	0
+size	Graphs	double, point			Максимальная ширина и высота чертежа в дюймах.	Maximum width and height of drawing, in inches.		size	Графы	двойной , точка		
+skew	Nodes	double	0.0	-100.0	Фактор перекоса для shape=polygon.	Skew factor for shape=polygon.		skew	Узлы	двойной	0.0	-100.0
+smoothing	Graphs	smoothType	"""none"""		Указывает шаг постобработки, используемый для сглаживания неравномерного распределения узлов. Только sfdp .	Specifies a post-processing step used to smooth out an uneven distribution of nodes.. sfdp only.		smoothing	Графы	SmoothType	"""none"""	
+sortv	Graphs, Clusters, Nodes	int	0	0	Порядок сортировки компонентов графа для упорядочивания packmodeупаковки.	Sort order of graph components for ordering packmode packing..		sortv	Графы, Кластеры, Узлы	инт	0	0
+splines	Graphs	bool, string			Управляет тем, как и когда отображаются ребра.	Controls how, and if, edges are represented.		splines	Графы	бул , строка		
+start	Graphs	startType	""""""		Параметр, используемый для определения начальной компоновки узлов. Только для neato , fdp , sfdp .	Parameter used to determine the initial layout of nodes. neato, fdp, sfdp only.		start	Графы	тип начала	""""""	
+style	Edges, Nodes, Clusters, Graphs	style	""""""		Задайте информацию о стиле для компонентов графика.	Set style information for components of the graph.		style	Ребра, узлы, кластеры, графы	стиль	""""""	
+stylesheet	Graphs	string	""""""		URL-адрес или путь, указывающий таблицу стилей XML, используемую в выходных данных SVG. Только svg .	A URL or pathname specifying an XML style sheet, used in SVG output. svg only.		stylesheet	Графы	нить	""""""	
+tail_lp	Edges	point			Положение метки хвоста ребра, в пунктах .. только запись.	Position of an edge's tail label, in points.. write only.		tail_lp	Края	точка		
+tailclip	Edges	bool	true		Если true, хвост ребра обрезается по границе хвостового узла.	If true, the tail of an edge is clipped to the boundary of the tail node.		tailclip	Края	бул	true	
+tailhref	Edges	escString	""""""		Синоним для tailURL.. map, только svg .	Synonym for tailURL.. map, svg only.		tailhref	Края	escСтрока	""""""	
+taillabel	Edges	lblString	""""""		Текстовая метка должна быть размещена у края.	Text label to be placed near tail of edge.		taillabel	Края	lblСтрока	""""""	
+tailport	Edges	portPos	center		Указывает, где на хвостовом узле прикрепить хвостовую часть ребра.	Indicates where on the tail node to attach the tail of the edge.		tailport	Края	портPos	center	
+tailtarget	Edges	escString	<none>		Окно браузера, используемое для tailURLссылки. Карта, только svg .	Browser window to use for the tailURL link. map, svg only.		tailtarget	Края	escСтрока	<none>	
+tailtooltip	Edges	escString	""""""		Подсказка-аннотация, прикрепленная к хвосту ребра. cmap , только svg .	Tooltip annotation attached to the tail of an edge. cmap, svg only.		tailtooltip	Края	escСтрока	""""""	
+tailURL	Edges	escString	""""""		Если определено, tailURLвыводится как часть метки хвоста ребра. Карта, только svg .	If defined, tailURL is output as part of the tail label of the edge. map, svg only.		tailURL	Края	escСтрока	""""""	
+target	Edges, Nodes, Graphs, Clusters	escString, string	<none>		Если объект имеет URL, этот атрибут определяет, какое окно браузера используется для URL.. карта, только svg .	If the object has a URL, this attribute determines which window of the browser is used for the URL.. map, svg only.		target	Ребра, узлы, графы, кластеры	escString , строка	<none>	
+TBbalance	Graphs	string	''		На какой ранг переместить плавающие (свободные) узлы. только точка .	Which rank to move floating (loose) nodes to. dot only.		TBbalance	Графы	нить	''	
+tooltip	Nodes, Edges, Clusters, Graphs	escString	""""""		Подсказка (текст при наведении мыши), прикрепленная к узлу, ребру, кластеру или графику. cmap , только svg .	Tooltip (mouse hover text) attached to the node, edge, cluster, or graph. cmap, svg only.		tooltip	Узлы, ребра, кластеры, графы	escСтрока	""""""	
+truecolor	Graphs	bool			Используется ли внутренняя растровая визуализация на основе цветовой модели TrueColor или используется только растровый вывод.	Whether internal bitmap rendering relies on a truecolor color model or uses. bitmap output only.		truecolor	Графы	бул		
+URL	Edges, Nodes, Graphs, Clusters	escString	<none>		Гиперссылки, включенные в вывод, зависящий от устройства. Только map, postscript , svg .	Hyperlinks incorporated into device-dependent output. map, postscript, svg only.		URL	Ребра, узлы, графы, кластеры	escСтрока	<none>	
+vertices	Nodes	pointList			Задает координаты вершин многоугольника узла в дюймах. только запись.	Sets the coordinates of the vertices of the node's polygon, in inches. write only.		vertices	Узлы	pointList		
+viewport	Graphs	viewPort	""""""		Окно обрезки на окончательном чертеже.	Clipping window on final drawing.		viewport	Графы	viewPort	""""""	
+voro_margin	Graphs	double	0.05	0.0	Диапазон настройки техники Вороного. Только neato , fdp , sfdp , twopi , circo .	Tuning margin of Voronoi technique. neato, fdp, sfdp, twopi, circo only.		voro_margin	Графы	двойной	0.05	0.0
+weight	Edges	int, double	1	"0(dot,twopi)
+1(neato,fdp)"	Вес лезвия.	Weight of edge.		weight	Края	целое число , двойное	1	"0(dot,twopi)
+1(neato,fdp)"
+width	Nodes	double	0.75	0.01	Ширина узла в дюймах.	Width of node, in inches.		width	Узлы	двойной	0.75	0.01
+xdotversion	Graphs	string			Определяет версию, xdotиспользуемую в выходных данных. Только xdot .	Determines the version of xdot used in output. xdot only.		xdotversion	Графы	нить		
+xlabel	Edges, Nodes	lblString	""""""		Внешняя метка для узла или ребра.	External label for a node or edge.		xlabel	Края, Узлы	lblСтрока	""""""	
+xlp	Nodes, Edges	point			Расположение внешней этикетки, в точках . Только запись.	Position of an exterior label, in points. write only.		xlp	Узлы, Края	точка		
+z	Nodes	double	0.0	"-MAXFLOAT
+-1000"	Значение координаты Z для 3D-макетов и дисплеев.	Z-coordinate value for 3D layouts and displays.		z	Узлы	двойной	0.0	"-MAXFLOAT
+-1000"

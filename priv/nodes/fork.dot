@@ -1,0 +1,3 @@
+digraph Gfork {
+    { make; printf; compare };
+ }

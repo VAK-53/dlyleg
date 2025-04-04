@@ -1,0 +1,52 @@
+name,type,default,description
+aspect,,,управление настройкой соотношения сторон
+bgcolor,"color, colorList",<none>,"цвет фона рисунка, а также цвет начальной заливки"
+center,bool,false,центрирование рисунка на page
+clusterrank,clusterMode,local,может быть global или none
+color,"color, colorList",black,"для кластеров, цвет контура и цвет заливки, если fillcolor не определен"
+colorscheme,string,"""""",схема интерпретации названий цветов
+comment,string,"""""",любая строка (зависит от формата)
+compound,bool,false,разрешать ребра между кластерами
+concentrate,bool,false,разрешает концентраторы ребер
+dpi,double,96.0,точек на дюйм при выводе изображения
+fillcolor,"color, colorList",lightgrey (nodes),цвет заливки кластера
+fontcolor,color,black,цвет лицевой стороны шрифта
+fontname,string,Times-Roman,семейство шрифтов
+fontnames,string,"""""","svg, ps, gd (только SVG)"
+fontpath,string,<system-dependent>,список каталогов для поиска шрифтов
+fontsize,double,14,размер метки в пунктах
+id,escString,"""""",любая строка (пользовательские метки объектов вывода)
+label,lblString,"""\N"" (nodes)",любая строка
+labeljust,string,"""c""","”l” и ”r” для меток кластеров, выравниваемых по левому и правому краю соответственно"
+labelloc,string,"""t"" (clusters)",”t” и ”b” для меток кластеров с верхней и нижней настройкой соответственно
+landscape,bool,false,"если true, означает orientation=landscape"
+layers,layerList,"""""",id:id:id...
+layersep,string,""":\t """,задает символ-разделитель для разбивки layers
+margin,"double, point",<device-dependent>,"отступ, включаемый в страницу, в дюймах"
+mindist,double,1.0,минимальное расстояние между всеми узлами (не в точках)
+nodesep,double,.25,"расстояние между узлами, в дюймах."
+nojustify,bool,false,"если true, то выравнивать по метке, а не по графу"
+ordering,string,"""""","если out, то сохраняется внешний порядок граней"
+orientation,"double, string",0.0,"если rotate не используется и указано значение landscape, то используется альбомная ориентация"
+outputorder,outputMode,breadthfirst,"или nodesfirst, edgesfirst"
+page,"double, point",,"единица постраничной разбивки, например, ""8.5,11"""
+pagedir,pagedir,BL,порядок обхода страниц
+pencolor,color,black,цвет для рисования границ кластера
+penwidth,double,1.0,"ширина пера для рисования границ, в пунктах"
+peripheries,int,1,количество границ кластера
+rank,rankType,,"same, min, max, source или sink"
+rankdir,rankdir,TB,LR (слева направо) или TB (сверху вниз)
+ranksep,"double, doubleList",0.5 (dot),"расстояние между рангами, в дюймах."
+ratio,"double, string",,"желаемое приблизительное соотношение сторон, fill или auto"
+rotate,int,0,"Если 90, то устанавливается альбомная ориентация"
+samplepoints,int,8 (output),"количество точек, используемых для представления эллипсов и окружностей на выводе (см. Приложение F)"
+searchsize,int,30,максимальное количество ребер с отрицательными значениями отсечения с целью проверки при поиске минимального ребра в симплексе сети
+size,"double, point",,"максимальный размер чертежа, в дюймах"
+splines,"bool, string","""""","рисовать ребра в виде сплайнов, полилиний, прямых линий"
+style,style,"""""","графические параметры, например, заливка для кластеров"
+stylesheet,string,"""""",путь или URL к XML-таблице стилей для SVG
+target,"escString, string",<none>,"если задан URL, определяет окно браузера для URL"
+tooltip,escString,"""""",аннотация всплывающей подсказки для кластера
+truecolor,bool,,"если установлено, принудительное использование 24–битного или индексированного цвета при выводе изображения"
+URL,escString,<none>,"URL, связанный с графом (зависит от формата)"
+viewport,viewPort,"""""",окно отсечения при выводе

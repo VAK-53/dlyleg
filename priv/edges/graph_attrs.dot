@@ -1,0 +1,5 @@
+digraph Gg_attrs {
+size  = "4,4";
+label = "graph 1";
+a->b;
+}
