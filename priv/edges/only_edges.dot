@@ -1,5 +1,0 @@
-digraph Gonly_edges {
-    a -> b;  b -> c;   a -> c;
-//comment
-    d -> c;  e -> c;   e -> a;
-}

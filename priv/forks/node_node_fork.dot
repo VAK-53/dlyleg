@@ -1,3 +1,0 @@
-digraph Gfork {
-    a -> b -> {c; d; e};
- }

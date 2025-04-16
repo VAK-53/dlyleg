@@ -1,5 +1,0 @@
-digraph Ga_b3A { a -> b
-            [style=dotted,
-             penwidth=1.0,
-             minlen=1];
-}

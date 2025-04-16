@@ -1,6 +1,0 @@
-digraph Gedge_attrs {
-edge
-[styl=dotted,
-penwidth=1.0,
-minlen=1];
-}

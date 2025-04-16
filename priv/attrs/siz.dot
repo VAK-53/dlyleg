@@ -1,4 +1,0 @@
-digraph G_siz {
-siz  = "4,4";
-label = "graph 1";
-}
