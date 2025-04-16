@@ -1,0 +1,9 @@
+digraph PID {
+  t -> sensor;
+  { setpoint, sensor} -> summator;
+  summator [label = "∑"]
+  summator -> regulator -> drive;
+  object -> sensor [style = dotted];
+  drive-> object [style = dotted];
+  object [style = filled, shape = box];
+}

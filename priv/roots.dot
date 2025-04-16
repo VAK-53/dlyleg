@@ -1,0 +1,6 @@
+digraph Roots {
+  t1-> {b, c}
+  {a, b, c} -> det -> sqrt;
+  {a, b, sqrt} -> x1;
+  {a, b, sqrt} -> x2;
+}
