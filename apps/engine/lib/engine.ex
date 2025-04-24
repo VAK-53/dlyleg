@@ -12,12 +12,12 @@ defmodule Engine do
       :world
 
   """
-  @root_dir Application.fetch_env!(:dly, :root_dir)
+  @root_dir Application.fetch_env!(:engine, :root_dir)
 
   def out_dir(), do: @root_dir <> "/priv/result"
 
   def write_file() do
-    file_name = String.trim_trailing(IO.gets("Введите название файла без расширения\n"),"\n") <> ".dot"
+    file_name = String.trim_trailing(IO.gets("Введите название файла для вывода без расширения\n"),"\n") <> ".dot"
     Path.join(out_dir(), file_name)
   end
 

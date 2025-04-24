@@ -16,8 +16,7 @@ defmodule Example do
 
   # Конвейер грамматического разбора
   def pars do
-    str = read()
-    str |> lexer |> parser
+    read() |> lexer |> parser
   end
 
   # Конвейер загрузки графа в libgraph
@@ -26,13 +25,16 @@ defmodule Example do
   end
 
   def convert do
-    str = read()
-    str |> lexer |> parser |> leg
+    read() |> lexer |> parser |> leg
   end
 
   # Конвейер экспорта графа в dot
   def dot do
-    str = read()
-    str |> lexer |> parser |> leg |> toDot
+    read() |> lexer |> parser |> leg |> toDot
+  end
+
+  # Сохранение таблиц графа
+  def save do
+    gr_save()
   end
 end

@@ -21,3 +21,10 @@ erl_crash.dump
 
 # Temporary files, for example, from tests.
 /tmp/
+
+*.dot
+*.png
+*.pdf
+*.atr
+*.rtg
+*.brh

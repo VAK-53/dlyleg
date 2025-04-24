@@ -9,7 +9,7 @@ defmodule DotLY do
   def storage_dir(), do: @root_dir <> "/priv"
 
   def read() do
-    file_name = String.trim_trailing(IO.gets("Введите название файла без расширения\n"),"\n") <> ".dot"
+    file_name = String.trim_trailing(IO.gets("Введите название .dot файла без расширения\n"),"\n") <> ".dot"
     file_name = if String.at(file_name,0) do
                     Path.join(storage_dir(), file_name)
                 end

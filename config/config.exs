@@ -17,5 +17,6 @@ import Config
 #       metadata: [:user_id]
 #
 
-config :dly, root_dir: File.cwd!
-config :leg, root_dir: File.cwd!
+config :dly,    root_dir: File.cwd!
+config :leg,    root_dir: File.cwd!
+config :engine, root_dir: File.cwd!
